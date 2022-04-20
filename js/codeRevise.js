@@ -39,6 +39,7 @@ inputs[1].onblur = function() {
     }
 };
 getCode.onclick = function() {
+    if(regEmail.test(inputs[0].value)) {
     ajax ( {
         type: 'post',
         header: {
@@ -57,6 +58,7 @@ getCode.onclick = function() {
         }
         }
     })
+}
 }
 btn.onclick = function() {
     var formData = new FormData(form);

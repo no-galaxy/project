@@ -8,7 +8,7 @@ var img = document.querySelector('img')
 spans[1].innerHTML = sessionStorage.getItem('email');
 spans[3].innerHTML = sessionStorage.getItem('username');
 spans[5].innerHTML = sessionStorage.getItem('id');
-// img.src = sessionStorage.getItem('headImg');
+img.src = 'http://' + sessionStorage.getItem('headImg');
 // uname.onblur = function() {
 //     console.log(uname.value);
 // }
@@ -27,6 +27,8 @@ file.onchange = function() {
     xhr.onload = function() {
         if (xhr.status == 200) {
             console.log(xhr.responseText);
+            responseText = JSON.parse(xhr.responseText)
+            img.src = 'http://' + responseText.data;
         }
     }
 }

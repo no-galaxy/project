@@ -96,7 +96,13 @@ input {
     line-height: 50px;
 }
 form img {
-    width: 60px;
+    width: 50px;
+    margin: 0 20px;
+}
+form #headImg {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
 }
 a {
     display: block;

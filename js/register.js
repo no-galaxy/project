@@ -84,7 +84,7 @@ inputs[2].onblur = function() {
                     console.log(result);
                     if (result.msg == 'SUCCESS') {
                     ps[2].className = 'success';
-                    ps[2].innerHTML = result.msg;
+                    ps[2].innerHTML = '注册成功';
                 } else {
                     ps[2].className = '';
                     ps[2].innerHTML = result.msg
