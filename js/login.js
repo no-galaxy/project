@@ -62,7 +62,7 @@ btn.onclick = function() {
                         // login.innerHTML = result.msg;
                         sessionStorage.setItem('email', result.data.email);
                         sessionStorage.setItem('username', result.data.username);
-                        sessionStorage.setItem('id', result.data.id);
+                        sessionStorage.setItem('id', result.data.id); 
                         sessionStorage.setItem('headImg',result.data.headImg);
                        window.location.href = "file:///C:/Users/pan'da'xie/Desktop/html/project1/user.html"
                     } else {
@@ -93,7 +93,8 @@ btn.onclick = function() {
                         // login.innerHTML =  result.msg;
                         sessionStorage.setItem('email', result.data.email);
                         sessionStorage.setItem('username', result.data.username);
-                        sessionStorage.setItem('id', result.data.id);
+                        sessionStorage.setItem('id', result.data.id); 
+                        sessionStorage.setItem('headImg',result.data.headImg);
                         window.location.href = "file:///C:/Users/pan'da'xie/Desktop/html/project1/user.html"
                     } else {
                         ps[2].className = '';
