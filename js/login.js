@@ -3,7 +3,7 @@ var btn = document.querySelector('.btn');
 var form = document.getElementById('form');
 var ps = document.getElementsByTagName('p');
 var inputs = document.getElementsByTagName('input');
-var login = document.querySelector('#login');
+// var login = document.querySelector('#login');
 // 正则表达式
 var regName = /^[a-zA-z0-9_-]{6,18}$/;
 // 密码(以字母开头，长度在6~18之间，只能包含字母、数字和下划线)：
@@ -59,11 +59,12 @@ btn.onclick = function() {
                         // login.className = 'success';
                         ps[2].className = 'success';
                         ps[2].innerHTML = '请点击下方'
-                        login.innerHTML = result.msg;
+                        // login.innerHTML = result.msg;
                         sessionStorage.setItem('email', result.data.email);
                         sessionStorage.setItem('username', result.data.username);
                         sessionStorage.setItem('id', result.data.id);
                         sessionStorage.setItem('headImg',result.data.headImg);
+                       window.location.href = "file:///C:/Users/pan'da'xie/Desktop/html/project1/user.html"
                     } else {
                         ps[2].className = '';
                         ps[2].innerHTML = result.msg;
@@ -89,10 +90,11 @@ btn.onclick = function() {
                         // login.className = 'success';
                         ps[2].className = 'success';
                         ps[2].innerHTML = '请点击下方';
-                        login.innerHTML =  result.msg;
+                        // login.innerHTML =  result.msg;
                         sessionStorage.setItem('email', result.data.email);
                         sessionStorage.setItem('username', result.data.username);
                         sessionStorage.setItem('id', result.data.id);
+                        window.location.href = "file:///C:/Users/pan'da'xie/Desktop/html/project1/user.html"
                     } else {
                         ps[2].className = '';
                         ps[2].innerHTML = result.msg;
